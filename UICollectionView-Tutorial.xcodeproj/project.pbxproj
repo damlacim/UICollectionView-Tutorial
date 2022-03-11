@@ -17,6 +17,7 @@
 		D06EDAD727DB2947006C3EC8 /* UICollectionView_TutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06EDAD627DB2947006C3EC8 /* UICollectionView_TutorialUITests.swift */; };
 		D06EDAD927DB2947006C3EC8 /* UICollectionView_TutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06EDAD827DB2947006C3EC8 /* UICollectionView_TutorialUITestsLaunchTests.swift */; };
 		D06EDAE627DB778C006C3EC8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06EDAE527DB778C006C3EC8 /* CollectionViewController.swift */; };
+		D06EDAE827DB79AE006C3EC8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06EDAE727DB79AE006C3EC8 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D06EDAD627DB2947006C3EC8 /* UICollectionView_TutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView_TutorialUITests.swift; sourceTree = "<group>"; };
 		D06EDAD827DB2947006C3EC8 /* UICollectionView_TutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView_TutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D06EDAE527DB778C006C3EC8 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D06EDAE727DB79AE006C3EC8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				D06EDAB727DB2946006C3EC8 /* SceneDelegate.swift */,
 				D06EDAB927DB2946006C3EC8 /* ViewController.swift */,
 				D06EDABB27DB2946006C3EC8 /* Main.storyboard */,
+				D06EDAE727DB79AE006C3EC8 /* CollectionViewCell.swift */,
 				D06EDAE527DB778C006C3EC8 /* CollectionViewController.swift */,
 				D06EDABE27DB2946006C3EC8 /* Assets.xcassets */,
 				D06EDAC027DB2946006C3EC8 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06EDAE827DB79AE006C3EC8 /* CollectionViewCell.swift in Sources */,
 				D06EDAE627DB778C006C3EC8 /* CollectionViewController.swift in Sources */,
 				D06EDABA27DB2946006C3EC8 /* ViewController.swift in Sources */,
 				D06EDAB627DB2946006C3EC8 /* AppDelegate.swift in Sources */,
