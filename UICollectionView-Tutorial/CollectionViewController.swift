@@ -80,5 +80,13 @@ class CollectionViewController: UICollectionViewController {
         selectIndex = indexPath.row
         performSegue(withIdentifier: "detail", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let vc = segue.destination as? ViewController {
+            vc.student = student[selectIndex]
+        }
+        
+    }
 
 }
