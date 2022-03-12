@@ -16,6 +16,8 @@ struct Student {
 
 class CollectionViewController: UICollectionViewController {
     
+    var selectIndex = 0
+    
     var student: [Student] = [Student]()
 
     override func viewDidLoad() {
@@ -72,6 +74,11 @@ class CollectionViewController: UICollectionViewController {
         }
         
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectIndex = indexPath.row
+        performSegue(withIdentifier: "detail", sender: self)
     }
 
 }
