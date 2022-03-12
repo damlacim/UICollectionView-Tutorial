@@ -9,7 +9,14 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
+struct Student {
+    let name: String
+    let studentNum: Int
+}
+
 class CollectionViewController: UICollectionViewController {
+    
+    var student: [Student] = [Student]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +36,20 @@ class CollectionViewController: UICollectionViewController {
             //satırlar arası boşluğu ayarlar
             layout.minimumLineSpacing = space
         }
+        
+        let s1 = Student(name: "Damla", studentNum: 123)
+        let s2 = Student(name: "Çağla", studentNum: 234)
+        let s3 = Student(name: "Beyda", studentNum: 345)
+        let s4 = Student(name: "Hilal", studentNum: 455)
+        let s5 = Student(name: "Nurdan", studentNum: 678)
+        let s6 = Student(name: "Sude", studentNum: 450)
+        
+        student.append(s1)
+        student.append(s2)
+        student.append(s3)
+        student.append(s4)
+        student.append(s5)
+        student.append(s6)
     
 
         
@@ -38,7 +59,7 @@ class CollectionViewController: UICollectionViewController {
         return 1
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 7
+        return student.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -46,7 +67,7 @@ class CollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
         
         if let customCell = cell as? CollectionViewCell {
-            customCell.studentNameLabel.text = "Student \(indexPath.row)"
+            customCell.studentNameLabel.text = student[indexPath.row].name
             return customCell
         }
         

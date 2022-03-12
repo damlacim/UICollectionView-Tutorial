@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.20000001789999999" green="0.231372565" blue="0.35294118520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hwk-OO-k84">
-                            <size key="itemSize" width="200" height="200"/>
+                            <size key="itemSize" width="150" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
